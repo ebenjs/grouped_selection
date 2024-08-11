@@ -1,7 +1,8 @@
 name: grouped_selection
 description: "A Flutter widget that allows grouped selection with single or multiple choices."
 version: 0.0.1
-homepage:
+homepage: https://github.com/ebenjs/grouped_selection
+repository: https://github.com/ebenjs/grouped_selection
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
