@@ -10,6 +10,10 @@ A Flutter widget that allows grouped selection with single or multiple choices i
 - **Dynamic Grid Layout:** Specify the number of columns to control how items are arranged.
 - **Selection Change Callback:** Get notified when the selected items change, allowing you to handle the selected data.
 
+## Demo
+
+![GroupedSelection Demo](demo.gif)
+
 ## Installation
 
 Add `grouped_selection` to your `pubspec.yaml` file:
