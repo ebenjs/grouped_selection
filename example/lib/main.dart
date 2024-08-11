@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:grouped_selection/grouped_selection.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("Grouped Selection Example")),
+        appBar: AppBar(title: const Text("Grouped Selection Example")),
         body: Center(
           child: GroupedSelection(
             items: [

@@ -75,7 +75,7 @@ class GroupedSelectionState extends State<GroupedSelection> {
           color: item.isSelected ? const Color(0xFFE94057) : Colors.transparent,
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
-            color: const Color(0xFFC7C7C7FF),
+            color: const Color(0xc7c7c7ff),
             width: 1,
           ),
         ),
@@ -128,10 +128,10 @@ class GroupedSelectionState extends State<GroupedSelection> {
   }
 
   Color _getIconColor(bool isSelected) {
-    return isSelected ? Colors.white : Color(0xFFE94057);
+    return isSelected ? Colors.white : const Color(0xFFE94057);
   }
 
   Color _getTextColor(bool isSelected) {
-    return isSelected ? Color(0xFFFFFFFF) : Color(0xFF000000);
+    return isSelected ? const Color(0xFFFFFFFF) : const Color(0xFF000000);
   }
 }
