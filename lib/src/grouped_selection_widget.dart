@@ -99,11 +99,7 @@ class GroupedSelectionState extends State<GroupedSelection> {
                 ),
               ),
             ),
-            if (item.isSelected && item.rightIcon != null)
-              Icon(
-                item.rightIcon ?? Icons.check,
-                color: _getIconColor(item.isSelected),
-              ),
+            _setupRightIcon(item),
           ],
         ),
       ),
@@ -133,5 +129,23 @@ class GroupedSelectionState extends State<GroupedSelection> {
 
   Color _getTextColor(bool isSelected) {
     return isSelected ? const Color(0xFFFFFFFF) : const Color(0xFF000000);
+  }
+
+  _setupRightIcon(SelectionItem item) {
+    if (item.enableRightIcon && item.rightIcon != null && item.isSelected) {
+      return Icon(
+        item.rightIcon,
+        color: _getIconColor(item.isSelected),
+      );
+    }
+
+    if (item.enableRightIcon && item.rightIcon == null && item.isSelected) {
+      return Icon(
+        Icons.check,
+        color: _getIconColor(item.isSelected),
+      );
+    }
+
+    return Container();
   }
 }
